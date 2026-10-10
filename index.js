@@ -17,10 +17,11 @@ app.listen(PORT, () => {
 // 2. Bot configuration
 const BOT_OPTIONS = {
   host: 'MARVELSMPHILLS-Gx3t.aternos.me',
-  port: 53449, // <-- Replace 12345 with the exact port from your Aternos 'Connect' popup!
-  username: 'DudeTNTistheBest',
-  version: false
+  port: 53449,        // <--- Add this exact port
+  version: '1.21.1',  // <--- Set explicit version matching your server
+  username: 'dudetnthehe'
 };
+
 
 
 let bot;

@@ -10,12 +10,14 @@ app.listen(PORT, () => console.log(`Web server listening on port ${PORT}`));
 
 // 2. Direct connection options (Using direct IP + dynamic port)
 const BOT_OPTIONS = {
-  host: '185.107.192.140', // Direct IP of your Aternos node
-  port: 53449,             // Current dynamic port
+  host: '185.107.192.140',
+  port: 53449,
   username: 'ScoutBot',
-  version: '1.21.1',
-  auth: 'offline'          // Explicitly tell mineflayer not to wait for Microsoft auth
+  version: false, // Let mineflayer auto-negotiate
+  auth: 'offline',
+  checkTimeoutInterval: 60000
 };
+
 
 let bot;
 

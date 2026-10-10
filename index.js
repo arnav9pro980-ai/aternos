@@ -17,9 +17,11 @@ app.listen(PORT, () => {
 // 2. Bot configuration
 const BOT_OPTIONS = {
   host: 'MARVELSMPHILLS-Gx3t.aternos.me',
-  username: process.env.BOT_NAME || 'ScoutBot',
+  port: 53449, // <-- Replace 12345 with the exact port from your Aternos 'Connect' popup!
+  username: 'DudeTNTistheBest',
   version: false
 };
+
 
 let bot;
 
